@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'github-syntax-dark/lib/github-dark.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-    .label {
-        @apply px-3 py-1 mt-2 font-semibold rounded-full text-zinc-800 hover:text-white transition-all duration-300 hover:brightness-50
-    }
+  .layout {
+    @apply w-screen h-screen flex min-h-screen flex-col items-center p-24 overflow-auto bg-zinc-800 text-neutral-300 font-poppins;
+  }
+  .label {
+    @apply px-3 py-1 mt-2 font-semibold rounded-full text-zinc-800 hover:text-white transition-all duration-300 hover:brightness-50;
+  }
+
+  .label-selected {
+    @apply px-3 py-1 mt-2 font-semibold rounded-full hover:text-zinc-800 text-white transition-all duration-300 brightness-50 hover:brightness-75;
+  }
 }

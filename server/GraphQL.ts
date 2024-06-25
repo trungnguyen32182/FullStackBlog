@@ -29,3 +29,23 @@ export const discusstionGraphQL = (
     }`
   return stringRequest
 }
+
+export const discusstionDetailGraphQL = (postId: number | undefined) => {
+  console.log(postId)
+  const stringRequest = `{
+  repository(owner: "trungnguyen32182", name: "JunBlog-Web") {
+    discussion(number: ${postId}) {
+      title
+      bodyHTML
+      createdAt
+      lastEditedAt
+      author {
+        login
+        url
+        avatarUrl
+      }
+    }
+  }
+}`
+  return stringRequest
+}

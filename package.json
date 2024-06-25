@@ -12,6 +12,8 @@
   "dependencies": {
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
+    "github-syntax-dark": "^0.5.0",
+    "html-react-parser": "^5.1.10",
     "next": "14.2.3",
     "postcss-import": "^16.1.0",
     "prettier": "^3.3.1",
